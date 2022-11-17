@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="no-ie" style="overflow: hidden;">
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+
+  <script defer language="javascript" type="text/javascript" src="detection.js"></script>
+  <script defer language="javascript" type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <video id="video" width="800px" height="600px"></video>
+</body>
+
+  <!--canvas-->
+
+  <div style="position: absolute; z-index: -2;background-position:bottom;">
+    <script  type="text/javascript" src="sketch6.js">
+    </script>
+  </div>
+  <!--canvas-->
+
+
+  <!--右边圆-->
+  <div id="yuan1"></div>
+  <div id="yuan2"></div>
+  <div id="yuan3"></div>
+
+  <!--右边圆-->
+
+
+
+  <!--注释-->
+
+  <div class="left">
+    <ul>
+      <li><a class="deardata">《天下永太平》</a></li>
+      <li style="left:-700px； "><a class="week";
+        ">基于增强现实（AR）技术，为丰子恺的画作展陈设计开发了⼀套设计⽅案。通过可交互的的方式，拉近观者与画作的距离，更加深入的分析和感触画作。本次设计方案主要围绕丰子恺的四幅作品《两小无嫌猜》、《逃避与追求》、《折得荷花浑忘却》、《冬日温暖》等展开虚实结合的设计。,通过面部识别化作“画中人”深入感受丰子恺的作画风格，并与画中人物交流互动</a></li>
+
+       
+        </h3></li>
+
+
+        <li><div id="tl1"> <img src="pitur/图例1.png"> </div></li>
+        <li><div id="tl2" > <img src="pitur/图例2.png"> </div></li>
+
+
+
+
+        <div class="cursor"></div>
+      </ul>
+
+
+      <script>
+
+        <!--鼠标效果-->
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove',(e)=>{
+          cursor.style.left = e.pageX + 'px';
+          cursor.style.top = e.pageY + 'px';
+
+        })
+
+
+      </script>
+
+      <!--注释-->
+
+      <!--方块命名-->
+
+  
+
+
+      <!--方块点击后出现的图片-->
+
+      <!--右边图例-->
+
+
+
+      <div id="wenzi" > <p>the  left  shows  that  the small hor<br> izontal Lines on the vertical  line represent each softwareafter un<br>locking the first software in orde<br>r，the right shows:  the small bla<br>ck dot under the vertical line indi<br>cates that after unlocking,  the tim<br>e of using the mobile phone exce<br>eds five minutes</p> </div>
+
+
+      <!--右边图例-->
+
+      <ul style="margin-left:-705px;position: absolute;top: 24%;">
+        <div style="font-size: 5px;">
+
+          <li id="more"> <a style="color:black; top: 60px;" href="../tiaozhuan/tiaozhuan.html">more</a></li>
+        
+          <div class="cursor2"></div>
+        </div>
+
+      </ul>
+      <!--右边图例-->
+
+
+      <script>
+
+
+        <!--鼠标效果-->
+
+        const cursor2 = document.querySelector('.cursor2');
+        document.addEventListener('mousemove',(e)=>{
+          cursor2.style.left = e.pageX + 'px';
+          cursor2.style.top = e.pageY + 'px';
+
+        })
+
+
+
+      </script>
+      <!--鼠标效果-->
+
+
+
+      <!--about legend more-->
+      <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+      <script>
+
+        let about = document.getElementById("about");
+        let zhushi = document.getElementById("zhushi");
+        let wenzi = document.getElementById("wenzi");
+        let minilegend = document.getElementById("minilegend");
+        let more= document.getElementById("more");
+        let yuan1= document.getElementById("yuan1");
+        let yuan2= document.getElementById("yuan2");
+        let yuan3= document.getElementById("yuan3");
+
+
+  
+
+      </script>
+      <!--about legend more-->
+
+
+    </body>
+
+
+
+ <!--gif-->
+ <div id="loading">
+    <div id="begin"></div>
+  </div>
+ <!--gif-->
+
+
+
+</body>
+
+ <!--gif-->
+     <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+(function($){
+    $(window).on('load',function(){
+        $('#begin').fadeOut(3000);
+        $('#loading').delay(3000).fadeOut('slow');
+
+    });
+ 
+     $(document).ready(function(){
+     //code
+     })
+ 
+})(jQuery);
+
+
+  <!--gif-->
+
+
+</script>
+
+
+</html>

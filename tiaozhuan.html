@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>more</title>
+	 <style type="text/css">
+       body{
+           background-color: #FAEAE8;
+       }
+       
+           #back{
+        animation: op 8s alternate ;
+    }
+       .pitur1 img,.pitur2 img{
+        animation: op 9s alternate ;
+    }
+.hengxian,.hengxian2,.hengxian3,.hengxian4,.hengxian5{
+        animation: op 13s alternate ;
+    }
+    .pitur2 img{
+        animation: op 11s alternate ;
+    }
+
+    @keyframes op{
+      50%{
+        opacity: 0%;
+       transform: translateY(-6%);
+    }
+    90%{
+       
+       transform: translateY(0%);
+    }
+
+    100%{
+        opacity: 100%;
+        
+    }
+
+}
+
+     .pitur1 img{
+     	width: 300px;
+     	margin:60px 72px;
+     	padding-top: 60px;
+     
+     }
+
+     .hengxian {
+     	width: 300px;
+     	height: 0.5px;
+     	background: black;
+     	margin-left: 70px;
+     	
+     }
+       .hengxian2 {
+     	width: 300px;
+     	height: 0.5px;
+     	background: black;
+     	margin-left: 500px;
+     	margin-top: -1px;
+     }
+            .hengxian3 {
+     	width: 300px;
+     	height: 0.5px;
+     	background: black;
+     	margin-left: 950px;
+     	margin-top: -0.5px;
+     }
+            .hengxian4{
+     	width: 300px;
+     	height: 0.5px;
+     	background: black;
+     	margin-left: 1450px;
+     	margin-top: -0.5px;
+     }
+        
+     #loading{
+    background:rgb(255,238,242);
+    bottom:0;
+    left:0;
+    position: fixed;
+    right:0;
+    top:0;
+    z-index:500;
+}
+
+#begin{
+    background: url(./pitur2/load.gif)center center no-repeat; 
+    height:300px;  
+    width:300px;   
+    left:46%;         
+    top:45%;  
+    margin: -100px 0 0 -100px;
+    position: absolute;
+}
+
+.cursor{
+position: fixed;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: #DEAB90;
+transition:0.1s;
+transform:translate(-50%,-50%);
+pointer-events: none;
+
+
+}
+ul li:hover ~ .cursor
+{
+transform :scale(4);
+mix-blend-mode: multiply;  
+
+}
+ li{ 
+position: absolute;
+top: 2%;
+margin:30px  35px;
+font-size:20px;
+font-weight: 100;
+list-style: none ;
+ 
+
+ }
+ li a{
+text-decoration: none;
+
+    }
+
+
+ </style>   
+
+</head>
+<body >
+ 
+
+ <div id="loading">
+    <div id="begin"></div>
+  </div>
+
+
+  
+	<div class="pitur1"> 
+   <ul>
+  
+    <div class="cursor"></div>
+   </ul>
+     <script>
+
+                <!--鼠标效果-->
+                const cursor = document.querySelector('.cursor');
+                document.addEventListener('mousemove',(e)=>{
+                    cursor.style.left = e.pageX + 'px';
+                    cursor.style.top = e.pageY + 'px';
+
+                })
+
+
+            </script>
+      
+	  <a class="r1" href="liandan/index.html"><img src="./pitur2/week1.png" ></a> 
+		<a class="r1" href="zhuma/index.html"><img src="./pitur2/week2.jpg" ></a> 
+		<a class="r1" href="yonggong/index.html"><img src="./pitur2/week3.jpeg" ></a> 
+		<a class="r1" href="shaobing/index.html"><img src="./pitur2/week4.png" ></a> 
+		 </div>
+
+		<div class="hengxian">
+	</div>
+		<div class="hengxian2">
+	</div>
+			<div class="hengxian3">
+	</div>
+			<div class="hengxian4">
+	</div>
+			
+
+
+		
+	</body>
+
+     <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+(function($){
+    $(window).on('load',function(){
+        $('#begin').fadeOut(3000);
+        $('#loading').delay(3000).fadeOut('slow');
+
+    });
+ 
+     $(document).ready(function(){
+     //code
+     })
+ 
+})(jQuery);
+
+</script>
+
+	</html>
